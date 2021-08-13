@@ -198,7 +198,7 @@ export class UpChunk {
    * Get portion of the file of x bytes corresponding to chunkSize
    */
   private getChunk() {
-    return new Promise((resolve) => {
+    return new Promise<void>((resolve) => {
       // Since we start with 0-chunkSize for the range, we need to subtract 1.
       const length =
         this.totalChunks === 1 ? this.file.size : this.chunkByteSize;
