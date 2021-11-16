@@ -26,7 +26,8 @@
     "lint": "tslint --project .",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "yarn clean && yarn lint && yarn test && webpack --config webpack.prod.js && yarn pack"
+    "build": "yarn clean && yarn lint && yarn test && webpack --config webpack.prod.js && yarn pack",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/jest": "^25.2.3",
